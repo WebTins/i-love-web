@@ -1,0 +1,19 @@
+h2 {
+    color: purple;
+    /* De heading wordt paars omdat de stylesheet boven het css bestand staat waardoor het overschreven wordt. */
+}
+
+.groen {
+    color: green;
+    /* De heading wordt groen omdat de class wordt aangeroepen en omdat de stylesheet boven het css bestand staat. */
+}
+
+.heading-1 {
+    color: pink;
+    /* De headings met een class zijn nu roze behalve de heading zonder class. De heading zonder class is paars. De reden is nog steeds dat de stylesheet boven het css bestand staat */
+}
+
+#heading {
+    color: yellow;
+    /* De heading wordt geel omdat ID belangrijker is dan de class. */
+}
