@@ -1,0 +1,23 @@
+input,
+label {
+    appearance: none;
+    display: block;
+    margin: 0.4rem 0;
+    border-radius: 1px;
+    transition: .3s;
+
+    &::placeholder {
+        color: hsl(0, 0%, 62%);
+        font-style: italic;
+        }
+
+    &::selection {
+        color: blue;
+        border-color: blue;
+    }
+
+    &:focus {
+        border-color: blue;
+        outline: blue;
+    }
+}

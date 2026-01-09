@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "pixel";
+    src: url(/fonts/PixelFont-Regular.otf);
+}
+
+body {
+  font-family: "pixel";
+}
+
+
 .header {
     padding: 1px;
     text-align: center;

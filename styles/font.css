@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "pixel";
+    src: url(/fonts/PixelFont-Regular.otf);
+}
+
+body {
+  font-family: "pixel";
+  width: 30cm;
+  line-height: 1.4;
+}
