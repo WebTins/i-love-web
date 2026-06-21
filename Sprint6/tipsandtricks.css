@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(204, 204, 204);
+    font-family: cursive;
+}
+
+section {
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.05);
+    border-radius: 1em;
+    width: 20em;
+    margin: auto;
+    margin-top: 1em;
+    span {
+        background-color: rgb(255, 196, 196);
+    }
+}
+
+/* Op desktop is 5em padding kleiner dan 8%, op andere devices is 8% padding kleiner dan 5em */
+.relative-padding {
+    padding: min(5em, 8%);
+}
+
+.responsive-font-sizes {
+    padding: min(5em, 8%);
+
+    h1 {
+    }
+}

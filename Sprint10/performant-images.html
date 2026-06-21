@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <picture>
+      <!-- Als het scherm breedte minder dan 600px is, dan wordt de avif als fallback gebruikt -->
+       <!-- Inspect > Network > Img -->
+        <!-- Bij min-width, als je meerdere images hebt met een min-width moeten de grootste sizes 
+         bovenaan dus van groot naar klein -->
+         <!-- Bij max-width andersom, dus van klein naar groot -->
+        <source media="(min-width: 600px)" type="image/webp" srcset="/Sprint10/assets/buurttuin.webp">
+        <source type="image/avif" srcset="/Sprint10/assets/avif-sample.avif">
+        <source type="image/webp" srcset="/Sprint10/assets/buurttuin.webp">
+        <img src="/Sprint10/assets/tanja.png" alt="buurttuin" width="400" height="300">
+    </picture>
+
+    <!-- Loading attribute in img tag, fetch priority -->
+
+    <picture>
+        <source media="(orientation: portrait)" type="image/avif" srcset="/Sprint10/assets/avif-sample.avif" width="300" height="400"> 
+          <source type="image/gif" srcset="/Sprint10/assets/emoji-tin.gif">
+          <source type="image/webp" srcset="/Sprint10/assets/buurttuin.webp">
+        <img src="/Sprint10/assets/tanja.png" alt="buurttuin" width="400" height="300">
+    </picture>
+  </body>
+  </html>
+  

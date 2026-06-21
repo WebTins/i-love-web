@@ -1,0 +1,14 @@
+/* Controleer of de browser attr() met het type <color> ondersteunt */
+@supports (color: attr(data-color type(color))) {
+  option {
+    /* Gebruik de geavanceerde functionaliteit */
+    color: attr(data-color type(color), black);
+  }
+}
+
+@supports not (color: attr(data-color type(color))) {
+  option {
+    color: red;
+  }
+} 
+
