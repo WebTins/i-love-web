@@ -1,0 +1,63 @@
+:root {
+  --bl: #111827;
+  --c1: #ff00d089;
+  --c2: #e100ff;
+  --c3: #3e03ff;
+  --shadow:
+    0 0 5px #fff, 0 0 15px #fff, 0 0 30px var(--c1), 0 0 45px var(--c1),
+    0 0 70px var(--c1), 0 0 100px var(--c1), 0 0 150px var(--c1);
+  --shadow2:
+    0 0 5px #fff, 0 0 20px #fff, 0 0 15px var(--c2), 0 0 45px var(--c2),
+    0 0 70px var(--c2), 0 0 100px var(--c2), 0 0 150px var(--c2);
+  --shadow3:
+    0 0 5px #fff, 0 0 20px #fff, 0 0 15px var(--c3), 0 0 45px var(--c3),
+    0 0 70px var(--c3), 0 0 100px var(--c3), 0 0 150px var(--c3);
+}
+
+@font-face {
+  font-family: "Movement";
+  src: url("/Sprint13/MovementV.ttf");
+}
+
+body {
+  font-family: "Movement";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--bl);
+
+  h1 {
+    color: #fff;
+    font-size: calc(1.5rem + 5vw);
+    letter-spacing: 5px;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes change {
+  0% {
+    font-variation-settings:
+      "wght" 100,
+      "SPAC" 100;
+    text-shadow: var(--shadow);
+  }
+
+  50% {
+    font-variation-settings:
+      "wght" 200,
+      "SPAC" 120;
+    text-shadow: var(--shadow2);
+  }
+
+  100% {
+    font-variation-settings:
+      "wght" 100,
+      "SPAC" 100;
+    text-shadow: var(--shadow3);
+  }
+}
